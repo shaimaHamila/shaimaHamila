@@ -1,5 +1,5 @@
 
-# 🧙‍♂️ Introducing the 'code' jester! 🚀
+# Hey 🐥
 
 
 I'm the programmer 💻, the debugger 🔍, and a digital sorcerer 🧹. My spellbook is filled with incantations written in JavaScript🚀 and Java ☕, and I'm always ready to turn bugs into 'features' with a sprinkle of debugging magic. 🪄
