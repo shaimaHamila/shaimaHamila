@@ -33,14 +33,14 @@ const Home: React.FC = () => {
       <div className='main'>
         <MyIntro
           socialLinks={SocialLinks}
-          imageSrc={"./public/ShaimaHamila.png"}
+          imageSrc={"ShaimaHamila.png"}
           title={"Hi, I'am Shaima Hamila"}
           subtitle={"< Software Engineering student & Full-stack JS developer /> "}
         />
         <AboutMe
           title={"About Me"}
           subTitle={"My introduction"}
-          imageSrc={"public/shaimaHamila-about-ing.png"}
+          imageSrc={"shaimaHamila-about-ing.png"}
           description={
             " I’m a Software Engineering student & Full-stack JS developer with 2 years of experience. I specialize increating high-quality web applications."
           }
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
           yearsExperience={"02+"}
           completedProjects={"12+"}
           companiesWorked={"04+"}
-          cvLink={"src/public/pdf/Shaima_Hamila_resum_2024.pdf"}
+          cvLink={"pdf/Shaima_Hamila_resum_2024.pdf"}
         />
         <MyServices title='Services' subTitle='What I offer' services={Services} />
         <MySkills title={"My Skills"} subTitle={"My technical skills"} skills={SkillsData} />
