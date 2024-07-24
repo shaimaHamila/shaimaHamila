@@ -26,6 +26,7 @@ import {
   SocialLinks,
 } from "../../MyData/MyData";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Home: React.FC = () => {
   return (
     <>
