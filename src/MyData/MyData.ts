@@ -117,19 +117,19 @@ export const Projects = [
     projectLink: "#",
   },
   {
-    imgSrc: "src/public/projectsImg/UXUIDesign.png",
+    imgSrc: "projectsImg/UXUIDesign.png",
     title: "UX/UI Design",
     description: "I designed this Landing page.",
     projectLink: "https://dribbble.com/shots/16662009-Asfar-El-Hamd-Logo-Travel-Agency-logo",
   },
   {
-    imgSrc: "src/public/projectsImg/fansbookAPP.png",
+    imgSrc: "/projectsImg/fansbookAPP.png",
     title: "Mobile App",
     description: "Developed Fansbook, a mobile app using Ionic/Angular and Firebase.",
     projectLink: "https://github.com/shaimaHamila/fansbook",
   },
   {
-    imgSrc: "src/public/projectsImg/reactBoilerplate.png",
+    imgSrc: "./projectsImg/reactBoilerplate.png",
     title: "React Boilerplate",
     description: "React Boilerplate with TypeScript, Redux Toolkit, Axios, Routing, Docker, Prettier.",
     projectLink: "https://github.com/shaimaHamila/React-Boilerplate",
