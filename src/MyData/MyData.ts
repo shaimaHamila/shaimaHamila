@@ -111,25 +111,25 @@ export const Sections = {
 };
 export const Projects = [
   {
-    imgSrc: "/src/assets/projectsImg/wordpressWebsite.png",
+    imgSrc: "src/assets/projectsImg/wordpressWebsite.png",
     title: "Wordpress Website",
     description: "I designed and developed this website using WordPress.",
     projectLink: "#",
   },
   {
-    imgSrc: "/src/assets/projectsImg/UXUIDesign.png",
+    imgSrc: "src/assets/projectsImg/UXUIDesign.png",
     title: "UX/UI Design",
     description: "I designed this Landing page.",
     projectLink: "https://dribbble.com/shots/16662009-Asfar-El-Hamd-Logo-Travel-Agency-logo",
   },
   {
-    imgSrc: "/src/assets/projectsImg/fansbookAPP.png",
+    imgSrc: "src/assets/projectsImg/fansbookAPP.png",
     title: "Mobile App",
     description: "Developed Fansbook, a mobile app using Ionic/Angular and Firebase.",
     projectLink: "https://github.com/shaimaHamila/fansbook",
   },
   {
-    imgSrc: "/src/assets/projectsImg/reactBoilerplate.png",
+    imgSrc: "src/assets/projectsImg/reactBoilerplate.png",
     title: "React Boilerplate",
     description: "React Boilerplate with TypeScript, Redux Toolkit, Axios, Routing, Docker, Prettier.",
     projectLink: "https://github.com/shaimaHamila/React-Boilerplate",
@@ -141,31 +141,31 @@ export const Projects = [
   //   projectLink: "https://github.com/shaimaHamila/ForeverInHeart",
   // },
   {
-    imgSrc: "/src/assets/projectsImg/API-Quick-Test.png",
+    imgSrc: "src/assets/projectsImg/API-Quick-Test.png",
     title: "API-Quick-Test",
     description: "Is a user-friendly tool for efficient API testing.",
     projectLink: "https://github.com/shaimaHamila/API-Quick-Test",
   },
   {
-    imgSrc: "/src/assets/projectsImg/hospitalManagement.png",
+    imgSrc: "src/assets/projectsImg/hospitalManagement.png",
     title: "Hospital Management",
     description: "Hospital Management System developed with React and ASP.NET Core EF 8.",
     projectLink: "https://github.com/shaimaHamila/HospitalManagement",
   },
   {
-    imgSrc: "/src/assets/projectsImg/MyFinance.png",
+    imgSrc: "src/assets/projectsImg/MyFinance.png",
     title: "MyFinance",
     description: "Web application developed with .NET Core 3.1 Entity Framework Core ASP.NET Core MVC HTML CSS.",
     projectLink: "https://github.com/shaimaHamila/MyFinance",
   },
   {
-    imgSrc: "/src/assets/projectsImg/StackOverflowClone.png",
+    imgSrc: "src/assets/projectsImg/StackOverflowClone.png",
     title: "Stack-Overflow-Clone",
     description: "StackOverflow clone built with Angular and Spring Boot, utilizing JWT for security.",
     projectLink: "https://github.com/shaimaHamila/Stack-Overflow-Clone",
   },
   {
-    imgSrc: "/src/assets/projectsImg/RunGroup.png",
+    imgSrc: "src/assets/projectsImg/RunGroup.png",
     title: "RunGroup web app",
     description: "RunGroup is a Spring MVC web app designed to manage running clubs and events efficiently.",
     projectLink: "https://github.com/shaimaHamila/RunGroup",

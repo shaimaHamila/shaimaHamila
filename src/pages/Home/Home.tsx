@@ -33,14 +33,14 @@ const Home: React.FC = () => {
       <div className='main'>
         <MyIntro
           socialLinks={SocialLinks}
-          imageSrc={"/src/assets/ShaimaHamila.png"}
+          imageSrc={"src/assets/ShaimaHamila.png"}
           title={"Hi, I'am Shaima Hamila"}
           subtitle={"< Software Engineering student & Full-stack JS developer /> "}
         />
         <AboutMe
           title={"About Me"}
           subTitle={"My introduction"}
-          imageSrc={"/src/assets/shaimaHamila-about-ing.png"}
+          imageSrc={"src/assets/shaimaHamila-about-ing.png"}
           description={
             " I’m a Software Engineering student & Full-stack JS developer with 2 years of experience. I specialize increating high-quality web applications."
           }
