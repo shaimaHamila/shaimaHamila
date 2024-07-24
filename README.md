@@ -1,23 +1,35 @@
+# Shaima Hamila Portfolio
 
-# Hey 🐥
+## Introduction
 
+Welcome to my portfolio project! This project showcases my skills and projects as a software engineer and web developer. It includes various sections like about me, my skills, projects, and contact information.
 
-I'm the programmer 💻, the debugger 🔍, and a digital sorcerer 🧹. My spellbook is filled with incantations written in JavaScript🚀 and Java ☕, and I'm always ready to turn bugs into 'features' with a sprinkle of debugging magic. 🪄
+## Features
 
-Don't be fooled by my code-covered cape; I've been known to vanquish errors in style! 💥
+- **Responsive Design**: Works on all devices, including mobile, tablet, and desktop.
+- **Interactive UI**: Engaging and interactive user interface built with modern technologies.
+- **Project Showcase**: Displays a collection of my projects with detailed descriptions and links.
+- **Skills Section**: Highlights my technical skills and proficiencies.
+- \*\*Contact Form: Allows visitors to get in touch with me directly through the website using EmailJS.com.
 
-And remember, in the world of coding, the true magic lies in the unseen lines of code... 🔮
+## Tech Stack
 
-### GitHub Stats:
+- **Frontend**: React, Vite, SCSS
+- **DevOps**: Docker, Docker Compose
+- **Form Handling**: EmailJS.com
+- **Other Tools**: Git, GitHub, Axios, Nodemon
 
-![shaimaHamila's Stats](https://github-readme-stats.vercel.app/api?username=shaimaHamila&theme=nightowl&show_icons=true&hide_border=true&count_private=true)
-![shaimaHamila's Streak](https://github-readme-streak-stats.herokuapp.com/?user=shaimaHamila&theme=nightowl&hide_border=true)
-![shaimaHamila's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=shaimaHamila&theme=nightowl&show_icons=true&hide_border=true&layout=compact)
+## Installation
 
+### Prerequisites
 
-## Breaking News: I Just Shared My Top-Secret LinkedIn Pickle Recipe 🥒
+- Node.js and npm installed
+- Docker and Docker Compose installed
 
-- [@ShaimaHamila](https://www.linkedin.com/in/shaimahamila/)
+### Running the Project
 
+#### Using Docker
 
-
+```bash
+npm run start
+```
