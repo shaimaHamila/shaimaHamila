@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { MessageEmail } from "../../../types/Message";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-
+import "react-toastify/dist/ReactToastify.css";
 type ContactInfo = {
   icon: string;
   title: string;
