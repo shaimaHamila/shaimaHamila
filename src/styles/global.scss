@@ -361,7 +361,13 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
+/* For small device */
+@media screen and (max-width: 430px) {
+  .nav__list {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+  }
+}
 @media screen and (min-width: 800px) {
   .container {
     margin-left: auto;

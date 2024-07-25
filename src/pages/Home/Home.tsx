@@ -43,7 +43,7 @@ const Home: React.FC = () => {
           subTitle={"My introduction"}
           imageSrc={"shaimaHamila-about-ing.png"}
           description={
-            " I’m a Software Engineering student & Full-stack JS developer with 2 years of experience. I specialize increating high-quality web applications."
+            " I’m a Software Engineering student & Full-stack JS developer with 2 years of experience. I specialize in creating high-quality web applications."
           }
           points={[
             "🚀 I deliver client-focused solutions.",
@@ -62,7 +62,7 @@ const Home: React.FC = () => {
         <ContactMe
           contactInformation={ContactInformation}
           subTitle={"Get in touch"}
-          title={" Contact Me"}
+          title={"Contact Me"}
           loggedIn={false}
         />
       </div>
@@ -71,7 +71,7 @@ const Home: React.FC = () => {
         subtitle='Full-stack JS developer'
         socialLinks={SocialLinks}
         navLinks={NavLinks}
-        copyText='Designed and Developed by Shaima Hamila'
+        copyText='Designed and Developed by Shaima Hamila ❤️'
       />
       <ToastContainer />
     </>
