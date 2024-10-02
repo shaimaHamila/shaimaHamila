@@ -24,6 +24,7 @@ And remember, in the world of coding, the true magic lies in the unseen lines of
 ## My portfolio ❤️
 - [@ShaimaHamila](https://shaimahamila.pages.dev/)
 
-- ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark&border=false
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+
 
 [![](https://visitcount.itsvg.in/api?id=shaimaHamila&label=Profile%20Views&color=7&icon=6&pretty=true)](https://visitcount.itsvg.in)
