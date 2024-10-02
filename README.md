@@ -20,9 +20,11 @@ And remember, in the world of coding, the true magic lies in the unseen lines of
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
 
 ## 📫 How to reach me
- [![email] ](mailto:2861984+hamilachaima1@gmail.com)
- [![LinkedIn] ](https://www.linkedin.com/in/shaimahamila/) 
- [![facebook] ](https://www.facebook.com/shaimaHamila) 
- [![dribbble] ](https://dribbble.com/shaimaHamila) 
+[![email](https://img.shields.io/badge/@shaimaHamila-lightgrey?style=for-the-badge)](mailto:2861984+hamilachaima1@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shaimahamila/) 
+[![facebook](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://www.facebook.com/shaimaHamila) 
+[![dribbble](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://dribbble.com/shaimaHamila) 
+
+ 
 
 [![](https://visitcount.itsvg.in/api?id=shaimaHamila&label=Profile%20Views&color=7&icon=6&pretty=true)](https://visitcount.itsvg.in)
