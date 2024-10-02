@@ -21,8 +21,8 @@ And remember, in the world of coding, the true magic lies in the unseen lines of
 
 ## 📫 How to reach me
  [![email](https://img.shields.io/badge/@shaimaHamila-lightgrey?style=for-the-badge)](mailto:2861984+hamilachaima1@gmail.com)
- [![dribbble](https://img.shields.io/badge/dribbble-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://dribbble.com/shaimaHamila) 
  [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shaimahamila/) 
- [![facebook](https://img.shields.io/badge/facebook-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://www.facebook.com/shaimaHamila) 
+ [![facebook](http://i.imgur.com/P3YfQoD.png)](https://www.facebook.com/shaimaHamila) 
+ [![dribbble](http://i.imgur.com/1AGmwO3.png)](https://dribbble.com/shaimaHamila) 
 
 [![](https://visitcount.itsvg.in/api?id=shaimaHamila&label=Profile%20Views&color=7&icon=6&pretty=true)](https://visitcount.itsvg.in)
