@@ -17,8 +17,6 @@ And remember, in the world of coding, the true magic lies in the unseen lines of
 ## My portfolio ❤️
 [@ShaimaHamila](https://shaimahamila.pages.dev/)
 
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
-
 ## 📫 How to reach me
 [![email](https://img.shields.io/badge/@shaimaHamila-lightgrey?style=for-the-badge)](mailto:2861984+hamilachaima1@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shaimahamila/) 
