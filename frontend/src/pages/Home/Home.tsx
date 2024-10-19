@@ -50,8 +50,8 @@ const Home: React.FC = () => {
             "🔥 I love sharing programming tips.",
           ]}
           yearsExperience={"02+"}
-          completedProjects={"12+"}
-          companiesWorked={"04+"}
+          completedProjects={"14+"}
+          companiesWorked={"05+"}
           cvLink={"src/assets/pdf/Shaima_Hamila_resum_2024.pdf"}
         />
         <MyServices title='Services' subTitle='What I offer' services={Services} />
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
         subtitle='Full-stack JS developer'
         socialLinks={SocialLinks}
         navLinks={NavLinks}
-        copyText='Designed and Developed by Shaima Hamila'
+        copyText='2024-Designed and Developed by Shaima Hamila'
       />
       <ToastContainer />
     </>

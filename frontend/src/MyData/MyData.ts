@@ -35,16 +35,16 @@ export const SkillsData = [
   { iconClass: "devicon-tailwindcss-original colored", name: "Tailwind", category: "Frontend" },
   { iconClass: "devicon-bootstrap-plain colored", name: "Bootstrap", category: "Frontend" },
   { iconClass: "devicon-antdesign-plain colored", name: "Ant Design", category: "Frontend" },
-  { iconClass: "devicon-express-original colored", name: "Express Ts", category: "Frontend" },
-  { iconClass: "devicon-spring-original colored", name: "Spring Boot", category: "Frontend" },
-  { iconClass: "devicon-dot-net-plain colored", name: ".NET", category: "Frontend" },
-  { iconClass: "devicon-firebase-plain colored", name: "Firebase", category: "Frontend" },
-  { iconClass: "devicon-mongodb-plain colored", name: "MongoDB", category: "Frontend" },
-  { iconClass: "devicon-mysql-original colored", name: "SQL", category: "Frontend" },
-  { iconClass: "devicon-docker-plain colored", name: "Docker", category: "Frontend" },
-  { iconClass: "devicon-git-plain colored", name: "Git", category: "Frontend" },
-  { iconClass: "devicon-wordpress-plain colored", name: "WordPress", category: "Frontend" },
-  { iconClass: "devicon-figma-plain colored", name: "Figma", category: "Frontend" },
+  { iconClass: "devicon-express-original colored", name: "Express Ts", category: "Backend" },
+  { iconClass: "devicon-spring-original colored", name: "Spring Boot", category: "Backend" },
+  { iconClass: "devicon-dot-net-plain colored", name: ".NET", category: "Backend" },
+  { iconClass: "devicon-firebase-plain colored", name: "Firebase", category: "Backend" },
+  { iconClass: "devicon-mongodb-plain colored", name: "MongoDB", category: "Backend" },
+  { iconClass: "devicon-mysql-original colored", name: "SQL", category: "Backend" },
+  { iconClass: "devicon-docker-plain colored", name: "Docker", category: "Devops" },
+  { iconClass: "devicon-git-plain colored", name: "Git", category: "Devops" },
+  { iconClass: "devicon-wordpress-plain colored", name: "WordPress", category: "CMS" },
+  { iconClass: "devicon-figma-plain colored", name: "Figma", category: "Design" },
 ];
 
 export const Sections = {
@@ -72,9 +72,14 @@ export const Sections = {
     title: "Work",
     qualifications: [
       {
+        title: "Full stack JS developer",
+        subtitle: "Astrolab Agency, Tunisia, Hybrid ",
+        calendar: "Aug 2024 - Present | 3 Months | Internship",
+      },
+      {
         title: "Frontend React developer & UX UI designer",
         subtitle: "Smart Ways Innovation, Tunisia, Remote",
-        calendar: "Jan 2024 - Present | 7 Months | Freelance",
+        calendar: "Jan 2024 - July 2024 | 7 Months | Freelance",
       },
       {
         title: "Full-Stack developer : MERN",
