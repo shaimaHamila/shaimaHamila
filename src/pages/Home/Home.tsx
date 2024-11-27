@@ -51,7 +51,7 @@ const Home: React.FC = () => {
             "🔥 I love sharing programming tips.",
           ]}
           yearsExperience={"02+"}
-          completedProjects={"14+"}
+          completedProjects={"15+"}
           companiesWorked={"05+"}
           cvLink={"pdf/Shaima_Hamila_resum_2024.pdf"}
         />

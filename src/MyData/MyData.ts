@@ -38,9 +38,11 @@ export const SkillsData = [
   { iconClass: "devicon-express-original colored", name: "Express Ts", category: "Backend" },
   { iconClass: "devicon-spring-original colored", name: "Spring Boot", category: "Backend" },
   { iconClass: "devicon-dot-net-plain colored", name: ".NET", category: "Backend" },
+  { iconClass: "devicon-socketio-original colored", name: "Socket.io", category: "backend" },
   { iconClass: "devicon-firebase-plain colored", name: "Firebase", category: "Backend" },
   { iconClass: "devicon-mongodb-plain colored", name: "MongoDB", category: "Backend" },
   { iconClass: "devicon-mysql-original colored", name: "SQL", category: "Backend" },
+  { iconClass: "devicon-postgresql-plain colored", name: "Postgresql", category: "Backend" },
   { iconClass: "devicon-docker-plain colored", name: "Docker", category: "Devops" },
   { iconClass: "devicon-git-plain colored", name: "Git", category: "Devops" },
   { iconClass: "devicon-wordpress-plain colored", name: "WordPress", category: "CMS" },
@@ -71,10 +73,10 @@ export const Sections = {
   work: {
     title: "Work",
     qualifications: [
-       {
+      {
         title: "Full stack JS developer",
         subtitle: "Astrolab Agency, Tunisia, Hybrid ",
-        calendar: "Aug 2024 - Present | 3 Months | Internship",
+        calendar: "Aug 2024 - Nov 2024 | 4 Months | Internship",
       },
       {
         title: "Frontend React developer & UX UI designer",
@@ -115,6 +117,27 @@ export const Sections = {
   },
 };
 export const Projects = [
+  {
+    imgSrc: "projectsImg/trackingSys.png",
+    title: "Trackin system webapp",
+    description:
+      "A web app for project, ticket, and equipment management with real-time notifications. Built with React, Express, Prisma, and PostgreSQL.",
+    projectLink: "https://github.com/shaimaHamila/Tracking_system",
+  },
+  {
+    imgSrc: "projectsImg/realtimeChatApp.png",
+    title: "Real time chat app",
+    description: "Built with React, Node.js, and Socket.io for seamless messaging.",
+    projectLink: "https://github.com/shaimaHamila/chat-App",
+  },
+  {
+    imgSrc: "projectsImg/vanlog.png",
+    title: "Vanlog Website",
+    description:
+      "Freelance project for order tracking and managment, developed frontend with React and designed UX/UI.",
+    projectLink: "https://vanlog-express.com/",
+  },
+
   {
     imgSrc: "projectsImg/wordpressWebsite.png",
     title: "Wordpress Website",
