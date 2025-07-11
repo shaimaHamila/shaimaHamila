@@ -32,17 +32,21 @@ export const SkillsData = [
   { iconClass: "devicon-react-original colored", name: "React Ts", category: "Frontend" },
   { iconClass: "devicon-angularjs-plain colored", name: "Angular", category: "Frontend" },
   { iconClass: "devicon-redux-original colored", name: "Redux Toolkit", category: "Frontend" },
+  { iconClass: "devicon-tanstack-query-original colored", name: "Tanstack query", category: "Frontend" },
   { iconClass: "devicon-tailwindcss-original colored", name: "Tailwind", category: "Frontend" },
   { iconClass: "devicon-bootstrap-plain colored", name: "Bootstrap", category: "Frontend" },
   { iconClass: "devicon-antdesign-plain colored", name: "Ant Design", category: "Frontend" },
   { iconClass: "devicon-express-original colored", name: "Express Ts", category: "Backend" },
+  { iconClass: "devicon-nestjs-plain colored", name: "Nest js", category: "Backend" },
   { iconClass: "devicon-spring-original colored", name: "Spring Boot", category: "Backend" },
+  { iconClass: "devicon-laravel-plain colored", name: "Laravel", category: "Backend" },
   { iconClass: "devicon-dot-net-plain colored", name: ".NET", category: "Backend" },
   { iconClass: "devicon-socketio-original colored", name: "Socket.io", category: "backend" },
   { iconClass: "devicon-firebase-plain colored", name: "Firebase", category: "Backend" },
   { iconClass: "devicon-mongodb-plain colored", name: "MongoDB", category: "Backend" },
   { iconClass: "devicon-mysql-original colored", name: "SQL", category: "Backend" },
   { iconClass: "devicon-postgresql-plain colored", name: "Postgresql", category: "Backend" },
+  { iconClass: "devicon-prisma-plain colored", name: "Prisma", category: "Backend" },
   { iconClass: "devicon-docker-plain colored", name: "Docker", category: "Devops" },
   { iconClass: "devicon-git-plain colored", name: "Git", category: "Devops" },
   { iconClass: "devicon-wordpress-plain colored", name: "WordPress", category: "CMS" },
@@ -56,7 +60,7 @@ export const Sections = {
       {
         title: "Software Engineering Degree",
         subtitle: "ISIMS - Sfax University",
-        calendar: "2022 - Present",
+        calendar: "2022 - 2025",
       },
       {
         title: "License in Computer Science and Multimedia",
@@ -73,6 +77,16 @@ export const Sections = {
   work: {
     title: "Work",
     qualifications: [
+      {
+        title: "Full stack Laravel developer",
+        subtitle: "Malcolm Technology Yazılım A.Ş., Turkey, Onsite",
+        calendar: "Apr 2025 - July 2025 | 4 Months | Internship",
+      },
+      {
+        title: "Full stack JS developer & UX UI designer",
+        subtitle: "Smart Ways Innovation, Tunisia, Remote",
+        calendar: "Feb 2025 - Present | 6 Months | Freelance",
+      },
       {
         title: "Full stack JS developer",
         subtitle: "Astrolab Agency, Tunisia, Hybrid ",
@@ -118,8 +132,29 @@ export const Sections = {
 };
 export const Projects = [
   {
+    imgSrc: "projectsImg/financeapp.png",
+    title: "Finance Management System",
+    description:
+      "A web app to manage financial transactions, subscriptions, and multi-branch and center operations with role-based access. Built with React, Express.js, Prisma, and PostgreSQL.",
+    projectLink: "http://168.231.108.198:3000/",
+  },
+  {
+    imgSrc: "projectsImg/kanbanboard.png",
+    title: "Kanban Board",
+    description:
+      "A task management system with drag-and-drop support for organizing tasks by status. Built with Laravel and Livewire.",
+    projectLink: "https://github.com/shaimaHamila/taskmanage-kanban",
+  },
+  {
+    imgSrc: "projectsImg/movieWebsite.png",
+    title: "Movie Website",
+    description: "A web app to browse, search, and manage movie information. Built with React, Redux, and a mock API.",
+    projectLink: "https://github.com/shaimaHamila/MovieWebsite",
+  },
+  //aaaaaaaaaaaaaaaa
+  {
     imgSrc: "projectsImg/trackingSys.png",
-    title: "Trackin system webapp",
+    title: "Tracking System Web App",
     description:
       "A web app for project, ticket, and equipment management with real-time notifications. Built with React, Express, Prisma, and PostgreSQL.",
     projectLink: "https://github.com/shaimaHamila/Tracking_system",
@@ -162,12 +197,6 @@ export const Projects = [
     description: "React Boilerplate with TypeScript, Redux Toolkit, Axios, Routing, Docker, Prettier.",
     projectLink: "https://github.com/shaimaHamila/React-Boilerplate",
   },
-  // {
-  //   imgSrc: "/src/public/",
-  //   title: "ForeverInHeart",
-  //   description: "Is a memory-keeping application Under Development using MEARN.",
-  //   projectLink: "https://github.com/shaimaHamila/ForeverInHeart",
-  // },
   {
     imgSrc: "projectsImg/API-Quick-Test.png",
     title: "API-Quick-Test",
@@ -203,7 +232,7 @@ export const ContactInformation = [
   {
     icon: "uil uil-phone",
     title: "Call Me",
-    subtitle: "+216 22 016 583",
+    subtitle: "+90 551 503 90 02",
   },
   {
     icon: "uil uil-envelope",
@@ -213,7 +242,7 @@ export const ContactInformation = [
   {
     icon: "uil uil-map-marker",
     title: "Location",
-    subtitle: "Tunisia-Sousse",
+    subtitle: "Turkey-Sivas",
   },
 ];
 
