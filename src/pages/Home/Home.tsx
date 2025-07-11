@@ -36,14 +36,14 @@ const Home: React.FC = () => {
           socialLinks={SocialLinks}
           imageSrc={"ShaimaHamila.png"}
           title={"Hi, I'am Shaima Hamila"}
-          subtitle={"< Software Engineering student & Full-stack JS developer /> "}
+          subtitle={"< Software Engineering & Full-stack JS developer /> "}
         />
         <AboutMe
           title={"About Me"}
           subTitle={"My introduction"}
           imageSrc={"shaimaHamila-about-ing.png"}
           description={
-            " I’m a Software Engineering student & Full-stack JS developer with 2 years of experience. I specialize in creating high-quality web applications."
+            " I’m a Software Engineering & Full-stack JS developer with 2 years of experience. I specialize in creating high-quality web applications."
           }
           points={[
             "🚀 I deliver client-focused solutions.",
@@ -53,7 +53,7 @@ const Home: React.FC = () => {
           yearsExperience={"02+"}
           completedProjects={"15+"}
           companiesWorked={"05+"}
-          cvLink={"pdf/Shaima_Hamila_resum_2024.pdf"}
+          cvLink={"pdf/Shaima_Hamila_cv_2025.pdf"}
         />
         <MyServices title='Services' subTitle='What I offer' services={Services} />
         <MySkills title={"My Skills"} subTitle={"My technical skills"} skills={SkillsData} />
@@ -71,7 +71,7 @@ const Home: React.FC = () => {
         subtitle='Full-stack JS developer'
         socialLinks={SocialLinks}
         navLinks={NavLinks}
-        copyText='2024-Designed and Developed by Shaima Hamila ❤️'
+        copyText='2025-Designed and Developed by Shaima Hamila ❤️'
       />
       <ToastContainer />
     </>
