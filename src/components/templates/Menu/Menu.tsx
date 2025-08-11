@@ -13,7 +13,7 @@ interface MenuProps {
 }
 const Menu: React.FC<MenuProps> = ({ menuItems, logo }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isDarkTheme, setIsDarkTheme] = useState(false);
+  const [isDarkTheme, setIsDarkTheme] = useState(true);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
