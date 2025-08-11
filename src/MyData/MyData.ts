@@ -136,7 +136,7 @@ export const Projects = [
     title: "Finance Management System",
     description:
       "A web app to manage financial transactions, subscriptions, and multi-branch and center operations with role-based access. Built with React, Express.js, Prisma, and PostgreSQL.",
-    projectLink: "http://168.231.108.198:3000/",
+    projectLink: "#",
   },
   {
     imgSrc: "projectsImg/kanbanboard.png",
@@ -242,7 +242,7 @@ export const ContactInformation = [
   {
     icon: "uil uil-map-marker",
     title: "Location",
-    subtitle: "Turkey-Sivas",
+    subtitle: "Turkey-Istanbul",
   },
 ];
 
