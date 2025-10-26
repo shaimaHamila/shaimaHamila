@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 
 import "./Menu.scss";
@@ -14,6 +14,11 @@ interface MenuProps {
 const Menu: React.FC<MenuProps> = ({ menuItems, logo }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(true);
+
+  useEffect(() => {
+    // ✅ apply dark theme on mount
+    document.body.classList.toggle("dark-theme", isDarkTheme);
+  }, [isDarkTheme]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);

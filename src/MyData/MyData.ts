@@ -232,7 +232,7 @@ export const ContactInformation = [
   {
     icon: "uil uil-phone",
     title: "Call Me",
-    subtitle: "+90 551 503 90 02",
+    subtitle: "+216 22 016 583",
   },
   {
     icon: "uil uil-envelope",
@@ -242,7 +242,7 @@ export const ContactInformation = [
   {
     icon: "uil uil-map-marker",
     title: "Location",
-    subtitle: "Turkey-Istanbul",
+    subtitle: "Tunisia-Sousse",
   },
 ];
 
