@@ -64,7 +64,7 @@ const AboutMe: React.FC<AboutMeProps> = ({
           </div>
 
           <div className='about__buttons'>
-            <a download='Shaima_Hamila_CV_2025.pdf' href={cvLink} className='button button--flex'>
+            <a download='ShaimaHamilaCV2025.pdf' href={cvLink} className='button button--flex'>
               Download CV<i className='uil uil-download-alt button__icon'></i>
             </a>
           </div>
