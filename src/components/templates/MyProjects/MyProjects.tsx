@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SectionTitle from "../../atoms/SectionTitle/SectionTitle";
 import "./MyProjects.scss";
+import { motion } from "framer-motion";
 
 type Project = {
   imgSrc: string;
@@ -16,6 +17,21 @@ type MyProjectsProps = {
   title: string;
 };
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0 },
+};
+
 const MyProjects: React.FC<MyProjectsProps> = ({ projects, title, subTitle }) => {
   const [modalImgSrc, setModalImgSrc] = useState<string | null>(null);
 
@@ -29,9 +45,15 @@ const MyProjects: React.FC<MyProjectsProps> = ({ projects, title, subTitle }) =>
   return (
     <section className='portfolio work__section section' id='projects'>
       <SectionTitle title={title} subTitle={subTitle} />
-      <div className='services__container container grid'>
-        {projects.map((project, index: any) => (
-          <div className='work__content' key={index}>
+      <motion.div
+        className='projects__container container grid'
+        variants={container}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true }}
+      >
+        {projects.map((project, index) => (
+          <motion.div className='work__content' key={index} variants={item}>
             <img
               className='work__img'
               src={project.imgSrc}
@@ -52,9 +74,9 @@ const MyProjects: React.FC<MyProjectsProps> = ({ projects, title, subTitle }) =>
                 <i className='uil uil-arrow-right button__icon' />
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
       {modalImgSrc && (
         <div className='modal' onClick={closeModal}>
           <span className='modal__close' onClick={closeModal}>

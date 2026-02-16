@@ -1,9 +1,27 @@
+.home {
+  position: relative;
+  z-index: 1;
+}
+
 /*============ home ==========*/
 .home__container {
   grid-template-columns: 1fr auto 1fr; /* Three columns: left space, content, right space */
   justify-items: center;
   align-items: center;
   gap: 1rem;
+}
+/* ... existing styles ... */
+.avatar {
+  border-radius: 12.5rem 12.5rem 1rem 1rem;
+  border: 5px solid #fff;
+  box-shadow: 0 0 25px var(--first-color); /* Glowing effect */
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  transition: box-shadow 0.3s ease;
+}
+
+.avatar:hover {
+  box-shadow: 0 0 50px var(--first-color);
 }
 
 .home__content {

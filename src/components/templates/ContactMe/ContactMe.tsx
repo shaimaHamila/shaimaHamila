@@ -6,6 +6,8 @@ import { MessageEmail } from "../../../types/Message";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
+
 type ContactInfo = {
   icon: string;
   title: string;
@@ -61,18 +63,31 @@ const ContactMe: React.FC<ContactMeProps> = ({ contactInformation, subTitle, tit
       <SectionTitle title={title} subTitle={subTitle} />
 
       <div className='contact__container container grid'>
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           {contactInformation.map((info, index) => (
             <div className='contact__information' key={index}>
               <i className={info.icon + " contact__icon"}></i>
               <div>
-                <h3 className='content__title'>{info.title}</h3>
+                <h3 className='contact__title'>{info.title}</h3>
                 <span className='contact__subtitle'>{info.subtitle}</span>
               </div>
             </div>
           ))}
-        </div>
-        <form ref={form} className='contact__form grid' onSubmit={handleSubmit}>
+        </motion.div>
+        <motion.form
+          ref={form}
+          className='contact__form grid'
+          onSubmit={handleSubmit}
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+        >
           <div className='contact__inputs grid'>
             <div className='contact__content'>
               <label className='contact__label'>Full Name</label>
@@ -122,7 +137,7 @@ const ContactMe: React.FC<ContactMeProps> = ({ contactInformation, subTitle, tit
               </Link>
             )}
           </div>
-        </form>
+        </motion.form>
       </div>
     </section>
   );

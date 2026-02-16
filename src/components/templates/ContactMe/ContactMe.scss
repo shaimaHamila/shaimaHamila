@@ -32,22 +32,23 @@
 .contact__input {
   width: 100%;
   background-color: var(--input-color);
-  color: #4533a1;
+  color: var(--title-color); /* White text */
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  border: none;
+  border: 1px solid transparent;
   outline: none;
-  padding: 10px 20px;
-  border-radius: 0.2rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
   margin-top: 6px;
+  transition: all 0.3s;
 }
 
 ::placeholder {
-  font-size: 14px;
-  color: rgb(189, 185, 204);
+  color: var(--text-color-light);
 }
+
 .contact__input:focus {
-  background-color: #e6e6ff;
+  border-color: var(--first-color);
   background-color: var(--input-color-hover);
 }
 /* For medium device */

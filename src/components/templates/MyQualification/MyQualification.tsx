@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SectionTitle from "../../atoms/SectionTitle/SectionTitle";
 import "./MyQualification.scss";
+import { motion, AnimatePresence } from "framer-motion";
 
 type Qualification = {
   title: string;
@@ -24,12 +25,15 @@ type MyQualificationProps = {
 
 const MyQualification: React.FC<MyQualificationProps> = ({ sections, title, subTitle }) => {
   const [activeSection, setActiveSection] = useState("education");
-  const [qualifications, setQualifications] = useState(sections.education.qualifications);
+  // Use state derived from activeSection directly in render or use effect, but current way works if updated correctly.
+  // Actually, handleTabClick updates both.
 
   const handleTabClick = (section: "education" | "work") => {
     setActiveSection(section);
-    setQualifications(sections[section].qualifications);
   };
+
+  const qualifications = (sections as any)[activeSection].qualifications;
+
   return (
     <section className='qualification__section section' id='qualification'>
       <SectionTitle title={title} subTitle={subTitle} />
@@ -56,44 +60,53 @@ const MyQualification: React.FC<MyQualificationProps> = ({ sections, title, subT
         </div>
 
         <div className='qualification__sections'>
-          <div className={`qualification__content qualification__active`} data-content>
-            {qualifications.map((qual, index) => (
-              <div className='qualification__data' key={index}>
-                {index % 2 === 0 ? (
-                  <>
-                    <div>
-                      <h3 className='qualification__title'>{qual.title}</h3>
-                      <span className='qualification__subtitle'>{qual.subtitle}</span>
-                      <div className='qualification__calendar'>
-                        <i className='uil uil-calendar-alt'></i>
-                        {qual.calendar}
+          <AnimatePresence mode='wait'>
+            <motion.div
+              key={activeSection}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+              className='qualification__content'
+            >
+              {qualifications.map((qual: Qualification, index: number) => (
+                <div className='qualification__data' key={index}>
+                  {index % 2 === 0 ? (
+                    <>
+                      <div>
+                        <h3 className='qualification__title'>{qual.title}</h3>
+                        <span className='qualification__subtitle'>{qual.subtitle}</span>
+                        <div className='qualification__calendar'>
+                          <i className='uil uil-calendar-alt'></i>
+                          {qual.calendar}
+                        </div>
                       </div>
-                    </div>
-                    <div>
-                      <span className='qualification__rounder'></span>
-                      {index < qualifications.length - 1 && <span className='qualification__line'></span>}
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div></div>
-                    <div>
-                      <span className='qualification__rounder'></span>
-                      {index < qualifications.length - 1 && <span className='qualification__line'></span>}
-                    </div>
-                    <div>
-                      <h3 className='qualification__title'>{qual.title}</h3>
-                      <span className='qualification__subtitle'>{qual.subtitle}</span>
-                      <div className='qualification__calendar'>
-                        <i className='uil uil-calendar-alt'></i>
-                        {qual.calendar}
+                      <div>
+                        <span className='qualification__rounder'></span>
+                        {index < qualifications.length - 1 && <span className='qualification__line'></span>}
                       </div>
-                    </div>
-                  </>
-                )}
-              </div>
-            ))}
-          </div>
+                    </>
+                  ) : (
+                    <>
+                      <div></div>
+                      <div>
+                        <span className='qualification__rounder'></span>
+                        {index < qualifications.length - 1 && <span className='qualification__line'></span>}
+                      </div>
+                      <div>
+                        <h3 className='qualification__title'>{qual.title}</h3>
+                        <span className='qualification__subtitle'>{qual.subtitle}</span>
+                        <div className='qualification__calendar'>
+                          <i className='uil uil-calendar-alt'></i>
+                          {qual.calendar}
+                        </div>
+                      </div>
+                    </>
+                  )}
+                </div>
+              ))}
+            </motion.div>
+          </AnimatePresence>
         </div>
       </div>
     </section>
