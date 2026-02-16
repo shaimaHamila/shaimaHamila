@@ -53,7 +53,7 @@ const Home: React.FC = () => {
           yearsExperience={"02+"}
           completedProjects={"15+"}
           companiesWorked={"05+"}
-          cvLink={"pdf/ShaimaHamilaCV2025.pdf"}
+          cvLink={"pdf/ShaimaHamilaCV2026.pdf"}
         />
         <MyServices title='Services' subTitle='What I offer' services={Services} />
         <MySkills title={"My Skills"} subTitle={"My technical skills"} skills={SkillsData} />
