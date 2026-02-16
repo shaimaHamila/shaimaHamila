@@ -2,7 +2,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import type { Container, Engine } from "tsparticles-engine";
-import { useTheme } from "../../../hooks/useTheme"; // Assuming you have a theme hook or context, otherwise we can use media query or simple class check.
+// Removed unused useTheme import.
 // Since we don't have a hook ready in the file list, I'll rely on CSS variables or a simple prop if passed,
 // but for now let's make a generic one that adapts or looks good on both.
 // Actually, using the primary color var would be best.
@@ -12,8 +12,8 @@ const Background = () => {
     await loadSlim(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    // console.log(container);
+  const particlesLoaded = useCallback(async (_container: Container | undefined) => {
+    // console.log(_container);
   }, []);
 
   // We can access CSS variables for colors if we want to sync with theme
@@ -28,7 +28,7 @@ const Background = () => {
       options={{
         background: {
           color: {
-            value: "transparent", // Let CSS handle background color (dark/light)
+            value: "transparent",
           },
         },
         fpsLimit: 120,
@@ -40,7 +40,7 @@ const Background = () => {
             },
             onHover: {
               enable: true,
-              mode: "grab", // connects particles to mouse
+              mode: "repulse",
             },
             resize: true,
           },
@@ -48,40 +48,27 @@ const Background = () => {
             push: {
               quantity: 4,
             },
-            grab: {
-              distance: 140,
-              links: {
-                opacity: 0.5,
-              },
+            repulse: {
+              distance: 100,
+              duration: 0.4,
             },
           },
         },
         particles: {
           color: {
-            value: "#ff4d29", // Use the primary orange/red hue explicitly or a variable if possible. Let's hardcode the hue 10 approx color for now or use primary.
-            // Actually, let's use a dynamic approach if possible, but hardcoded nicely is fine.
-            // var(--hue-color) is 10. hsl(10, 98%, 50%) -> #fc3e0d approx.
-            // Let's use a reliable techie color that mixes well.
+            value: "#ff4d29", // Primary Hue 10
           },
           links: {
-            color: "#fc3e0d", // Primary color
-            distance: 150,
-            enable: true,
-            opacity: 0.2,
-            width: 1,
-            triangles: {
-              enable: true, // Creates 3D mesh effect
-              opacity: 0.05,
-            },
+            enable: false, // Disable links to avoid "molecular/physician" look
           },
           move: {
-            direction: "none",
+            direction: "top", // Floating upwards like code bubbles
             enable: true,
             outModes: {
-              default: "bounce",
+              default: "out",
             },
             random: true,
-            speed: 1, // Slow elegant movement
+            speed: 1.5,
             straight: false,
           },
           number: {
@@ -89,27 +76,62 @@ const Background = () => {
               enable: true,
               area: 800,
             },
-            value: 60, // Not too crowded
+            value: 20, // Middle ground density
           },
           opacity: {
-            value: 0.3,
-            random: true, // Adds depth perception
-            anim: {
-              enable: true,
-              speed: 0.5,
-              opacity_min: 0.1,
-              sync: false,
-            },
+            value: 0.5, // Visible but not overwhelming (was 0.2, originally 0.8)
+            random: true,
           },
           shape: {
-            type: "polygon", // Polygonal shapes
-            polygon: {
-              nb_sides: 6, // Hexagons are very "developer/tech"
-            },
+            type: "char",
+            character: [
+              {
+                value: [
+                  "{ }",
+                  "</>",
+                  "&&",
+                  "||",
+                  ";",
+                  "const",
+                  "=>",
+                  "[]", // JS/TS
+                  "def",
+                  "class",
+                  "self",
+                  "#", // Python
+                  "public",
+                  "void",
+                  "int", // Java/C++
+                  "<?php",
+                  "$", // PHP
+                  "func",
+                  "var",
+                  "let", // Swift/Go/JS
+                  "SELECT",
+                  "FROM", // SQL
+                  "<div>",
+                  "npm",
+                  "git", // Web/Tools
+                ],
+                font: "Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace",
+                style: "",
+                weight: "500", // Back to slightly bold for legibility
+              },
+            ],
           },
           size: {
-            value: { min: 1, max: 3 },
-            random: true, // Adds depth perception
+            value: { min: 12, max: 18 }, // Middle ground size (was 10-14, originally 14-22)
+            random: true,
+          },
+          rotate: {
+            value: 0,
+            random: true,
+            direction: "clockwise",
+            animation: {
+              enable: true,
+              speed: 3,
+              sync: false,
+            },
           },
         },
         detectRetina: true,
