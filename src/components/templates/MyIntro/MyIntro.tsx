@@ -19,7 +19,7 @@ const MyIntro: React.FC<MyIntroProps> = ({ socialLinks, imageSrc, title }) => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [title, "Frontend Developer", "React Specialist", "UI/UX Enthusiast", "Problem Solver"],
+      strings: ["Javascript Developer", "Software Engineer", "UI/UX Enthusiast", "Problem Solver"],
       typeSpeed: 50,
       backSpeed: 50,
       backDelay: 2000,
@@ -93,6 +93,13 @@ const MyIntro: React.FC<MyIntroProps> = ({ socialLinks, imageSrc, title }) => {
             transition={{ duration: 0.8 }}
           >
             <div className='blob-shape'>
+              {/* React Atom Orbits */}
+              <div className='orbit-container'>
+                <div className='react-orbit orbit-1'></div>
+                <div className='react-orbit orbit-2'></div>
+                <div className='react-orbit orbit-3'></div>
+              </div>
+              {/* Profile Nucleus */}
               <img className='home__blob' src={imageSrc} alt='Profile' />
             </div>
           </motion.div>

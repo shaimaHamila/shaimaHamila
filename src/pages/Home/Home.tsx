@@ -66,7 +66,7 @@ const Home: React.FC = () => {
         subtitle='Full-stack JS developer'
         socialLinks={SocialLinks}
         navLinks={NavLinks}
-        copyText='2025-Designed and Developed by Shaima Hamila ❤️'
+        copyText='2026-Designed and Developed by Shaima Hamila ❤️'
       />
       <ToastContainer />
     </>

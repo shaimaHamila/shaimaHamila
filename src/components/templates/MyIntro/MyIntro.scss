@@ -29,11 +29,11 @@
 @media screen and (min-width: 768px) {
   .home__content {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr; /* Text Area slightly larger */
+    grid-template-columns: 1fr 1fr; /* Equal width for better balance */
     text-align: left;
     align-items: center;
     gap: 4rem;
-    padding-top: 4rem; /* More space on desktop */
+    padding-top: 2rem; /* More space on desktop */
   }
 }
 
@@ -157,27 +157,77 @@
 
 .blob-shape {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 320px; /* Increased from 280px */
+  height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* React Atom Nucleus (Profile Image) */
 .home__blob {
+  width: 160px; /* Increased from 140px */
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%; /* Perfect Circle */
+  border: 3px solid var(--first-color);
+  box-shadow: 0 0 20px rgba(var(--hue-color), 98%, 50%, 0.5); /* Glowing Nucleus */
+  z-index: 10;
+  position: relative;
+}
+
+/* Orbit Container (Spins slowly) */
+.orbit-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  animation: spin-atom 10s linear infinite;
+  pointer-events: none; /* Let clicks pass to image/area */
+}
+
+/* Individual Orbits */
+.react-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 35%; /* Eliptical shape */
+  border: 2px solid var(--first-color);
   border-radius: 50%;
-  border: 4px solid var(--first-color);
-  box-shadow: 0 0 30px rgba(252, 62, 13, 0.3); /* Glow */
-  animation: float 6s ease-in-out infinite;
+  transform-origin: center;
+  box-shadow: 0 0 10px rgba(var(--hue-color), 98%, 50%, 0.3);
+  opacity: 0.8;
+}
+
+.orbit-1 {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.orbit-2 {
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.orbit-3 {
+  transform: translate(-50%, -50%) rotate(120deg);
+}
+
+@keyframes spin-atom {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .blob-shape {
-    width: 320px; /* Controlled Max Size */
-    height: 320px;
+    width: 450px; /* Significantly larger on desktop (was 360px) */
+    height: 450px;
+  }
+  .home__blob {
+    width: 220px; /* Larger Nucleus (was 180px) */
+    height: 220px;
   }
 }
 
@@ -210,15 +260,6 @@
 }
 
 /* Animations */
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
 
 /* Glow Button (Keep existing) */
 .button.glow-on-hover {
