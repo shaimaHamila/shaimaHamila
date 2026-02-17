@@ -59,14 +59,21 @@ const ContactMe: React.FC<ContactMeProps> = ({ contactInformation, subTitle, tit
   };
 
   return (
-    <section id='contact' className='contact section'>
+    <motion.section
+      id='contact'
+      className='contact section'
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8 }}
+    >
       <SectionTitle title={title} subTitle={subTitle} />
 
       <div className='contact__container container grid'>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
           {contactInformation.map((info, index) => (
@@ -85,7 +92,7 @@ const ContactMe: React.FC<ContactMeProps> = ({ contactInformation, subTitle, tit
           onSubmit={handleSubmit}
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
           viewport={{ once: true }}
         >
           <div className='contact__inputs grid'>
@@ -139,7 +146,7 @@ const ContactMe: React.FC<ContactMeProps> = ({ contactInformation, subTitle, tit
           </div>
         </motion.form>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

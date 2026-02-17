@@ -13,9 +13,18 @@ interface MyServicesProps {
   subTitle: string;
   services: Service[];
 }
+import { motion } from "framer-motion";
+
 const MyServices: React.FC<MyServicesProps> = ({ title, subTitle, services }) => {
   return (
-    <section className='services section' id='services'>
+    <motion.section
+      className='services section'
+      id='services'
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8 }}
+    >
       {/* <!--==================== SERVICES ====================--> */}
       <SectionTitle title={title} subTitle={subTitle} />
 
@@ -39,7 +48,7 @@ const MyServices: React.FC<MyServicesProps> = ({ title, subTitle, services }) =>
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 export default MyServices;

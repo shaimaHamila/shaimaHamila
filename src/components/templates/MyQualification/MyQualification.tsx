@@ -35,7 +35,14 @@ const MyQualification: React.FC<MyQualificationProps> = ({ sections, title, subT
   const qualifications = (sections as any)[activeSection].qualifications;
 
   return (
-    <section className='qualification__section section' id='qualification'>
+    <motion.section
+      className='qualification__section section'
+      id='qualification'
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8 }}
+    >
       <SectionTitle title={title} subTitle={subTitle} />
 
       <div className='qualification__container container'>
@@ -109,7 +116,7 @@ const MyQualification: React.FC<MyQualificationProps> = ({ sections, title, subT
           </AnimatePresence>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

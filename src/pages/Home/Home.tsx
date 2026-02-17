@@ -32,12 +32,7 @@ const Home: React.FC = () => {
     <>
       <Menu logo={"Shaima Hamila"} menuItems={menuItems} />
       <div className='main'>
-        <MyIntro
-          socialLinks={SocialLinks}
-          imageSrc={"ShaimaHamila.png"}
-          title={"Hi, I'am Shaima Hamila"}
-          subtitle={"< Software Engineering & Full-stack JS developer /> "}
-        />
+        <MyIntro socialLinks={SocialLinks} imageSrc={"ShaimaHamila.png"} title={"Hi, I'am Shaima Hamila"} />
         <AboutMe
           title={"About Me"}
           subTitle={"My introduction"}
