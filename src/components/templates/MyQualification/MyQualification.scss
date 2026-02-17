@@ -32,7 +32,7 @@
   margin-bottom: var(--mb-1);
 }
 
-.qualification__calender {
+.qualification__calendar {
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
 }
@@ -43,6 +43,7 @@
   height: 13px;
   background-color: var(--first-color);
   border-radius: 50%;
+  box-shadow: 0 0 10px var(--first-color); /* Glow */
 }
 
 .qualification__line {
@@ -52,14 +53,7 @@
   background-color: var(--first-color);
   transform: translate(6px, -7px);
 }
-
-.qualification__content[data-content] {
-  display: none;
-}
-
-.qualification__active[data-content] {
-  display: block;
-}
+/* Removed data-content display logic as it is handled by framer-motion/react now */
 
 .qualification__button.qualification__active {
   color: var(--first-color);

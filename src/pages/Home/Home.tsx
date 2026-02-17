@@ -32,12 +32,7 @@ const Home: React.FC = () => {
     <>
       <Menu logo={"Shaima Hamila"} menuItems={menuItems} />
       <div className='main'>
-        <MyIntro
-          socialLinks={SocialLinks}
-          imageSrc={"ShaimaHamila.png"}
-          title={"Hi, I'am Shaima Hamila"}
-          subtitle={"< Software Engineering & Full-stack JS developer /> "}
-        />
+        <MyIntro socialLinks={SocialLinks} imageSrc={"ShaimaHamila.png"} title={"Hi, I'am Shaima Hamila"} />
         <AboutMe
           title={"About Me"}
           subTitle={"My introduction"}
@@ -53,7 +48,7 @@ const Home: React.FC = () => {
           yearsExperience={"02+"}
           completedProjects={"15+"}
           companiesWorked={"05+"}
-          cvLink={"pdf/ShaimaHamilaCV2025.pdf"}
+          cvLink={"pdf/ShaimaHamilaCV2026.pdf"}
         />
         <MyServices title='Services' subTitle='What I offer' services={Services} />
         <MySkills title={"My Skills"} subTitle={"My technical skills"} skills={SkillsData} />
@@ -71,7 +66,7 @@ const Home: React.FC = () => {
         subtitle='Full-stack JS developer'
         socialLinks={SocialLinks}
         navLinks={NavLinks}
-        copyText='2025-Designed and Developed by Shaima Hamila ❤️'
+        copyText='2026-Designed and Developed by Shaima Hamila ❤️'
       />
       <ToastContainer />
     </>

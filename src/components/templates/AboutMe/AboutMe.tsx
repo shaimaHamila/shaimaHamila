@@ -12,6 +12,8 @@ interface AboutMeProps {
   companiesWorked: string;
   cvLink: string;
 }
+import { motion } from "framer-motion";
+
 const AboutMe: React.FC<AboutMeProps> = ({
   title,
   subTitle,
@@ -24,7 +26,14 @@ const AboutMe: React.FC<AboutMeProps> = ({
   cvLink,
 }) => {
   return (
-    <section className='about section' id='about'>
+    <motion.section
+      className='about section'
+      id='about'
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8 }}
+    >
       <SectionTitle title={title} subTitle={subTitle} />
       <div className='about__container container grid'>
         <img src={imageSrc} alt='about me' className='about__img' />
@@ -64,13 +73,13 @@ const AboutMe: React.FC<AboutMeProps> = ({
           </div>
 
           <div className='about__buttons'>
-            <a download='ShaimaHamilaCV2025.pdf' href={cvLink} className='button button--flex'>
+            <a download='ShaimaHamilaCV2026.pdf' href={cvLink} className='button button--flex'>
               Download CV<i className='uil uil-download-alt button__icon'></i>
             </a>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 export default AboutMe;

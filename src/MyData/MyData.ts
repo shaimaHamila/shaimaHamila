@@ -136,7 +136,7 @@ export const Projects = [
     title: "Finance Management System",
     description:
       "A web app to manage financial transactions, subscriptions, and multi-branch and center operations with role-based access. Built with React, Express.js, Prisma, and PostgreSQL.",
-    projectLink: "#",
+    projectLink: "https://dar-coran.com/",
   },
   {
     imgSrc: "projectsImg/kanbanboard.png",

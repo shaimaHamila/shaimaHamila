@@ -8,9 +8,11 @@
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 98%, 50%);
   --logo-color: hsl(var(--hue-color), 98%, 50%);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
-  --first-color-alt: hsl(var(--hue-color), 98%, 42%);
+  --first-color-second: hsl(var(--hue-color), 98%, 42%);
+  --first-color-alt: hsl(var(--hue-color), 98%, 40%);
   --first-color-lighter: hsl(var(--hue-color), 29%, 85%);
+
+  /* Light Theme Variables (Default) */
   --title-color: hsl(var(--hue-color), 8%, 15%);
   --text-color: hsl(var(--hue-color), 8%, 45%);
   --text-color-light: hsl(var(--hue-color), 8%, 65%);
@@ -21,6 +23,12 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
   --footer-color: #0e0e0e;
+
+  /* Glassmorphism Variables (Light Mode) */
+  --glass-bg: rgba(255, 255, 255, 0.7); /* Frosted glass for light mode */
+  --glass-border: 1px solid rgba(255, 255, 255, 0.4);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  --backdrop-blur: blur(10px);
 
   /*====== font and typography ========*/
   --body-font: "Poppins", sans-serif;
@@ -40,7 +48,6 @@
   --font--semi-bold: 600;
 
   /*======== margenes bottom ======*/
-  /* .25rem = 4px, .5rem = 8p, .75rem = 12px ... */
   --mb-0-25: 0.25rem;
   --mb-0-5: 0.5rem;
   --mb-0-75: 0.75rem;
@@ -55,7 +62,6 @@
   --z-modal: 1000;
 
   /* font size for large devices*/
-
   @media screen and (min-width: 968px) {
     :root {
       --big-font-size: 3rem;
@@ -70,18 +76,20 @@
 
   /*========== Variables dark theme =======*/
   body.dark-theme {
-    /* HSL color mode */
+    /* Modern Dark Theme / Glassmorphism */
+    --title-color: #ffffff;
+    --text-color: #e0e0e0;
+    --text-color-light: #a0a0a0;
+    --input-color: rgba(255, 255, 255, 0.05); /* Glass input */
+    --body--color: #0a0a0f; /* Deep dark background */
+    --container-color: rgba(255, 255, 255, 0.03); /* Glass container */
+    --scroll-bar-color: #2a2a2f;
+    --scroll-thumb-color: var(--first-color);
+    --footer-color: #050505;
 
-    --logo-color: #242424;
-    --first-color-second: hsl(var(--hue-color), 30%, 8%);
-    --title-color: hsl(var(--hue-color), 8%, 95%);
-    --text-color: hsl(var(--hue-color), 8%, 75%);
-    --input-color: hsl(var(--hue-color), 29%, 16%);
-    --input-color-hover: hsl(var(--hue-color), 29%, 19%);
-    --body--color: hsl(var(--hue-color), 2%, 7%);
-    --container-color: hsl(var(--hue-color), 29%, 16%);
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-    --footer-color: hsl(10deg 98% 50% / 69%);
+    /* Glassmorphism Variables (Dark Mode) */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
 }

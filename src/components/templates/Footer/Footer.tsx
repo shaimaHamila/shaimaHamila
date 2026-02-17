@@ -9,9 +9,17 @@ type FooterProps = {
   copyText: string;
 };
 
+import { motion } from "framer-motion";
+
 const Footer: React.FC<FooterProps> = ({ title, subtitle, socialLinks, navLinks, copyText }) => {
   return (
-    <footer className='footer'>
+    <motion.footer
+      className='footer'
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.1 }}
+      transition={{ duration: 1 }}
+    >
       <div className='footer__bg'>
         <div className='footer__container container grid'>
           <div>
@@ -39,7 +47,7 @@ const Footer: React.FC<FooterProps> = ({ title, subtitle, socialLinks, navLinks,
 
         <p className='footer__copy'>&#169; {copyText}</p>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 
