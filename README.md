@@ -15,10 +15,10 @@ And remember, in the world of coding, the true magic lies in the unseen lines of
 
 
 ## My portfolio ❤️
-[@ShaimaHamila](https://shaimahamila.pages.dev/)
+[@ShaimaHamila](https://hamila.uk/)
 
 ## 📫 How to reach me
-[![email](https://img.shields.io/badge/@shaimaHamila-lightgrey?style=for-the-badge)](mailto:2861984+hamilachaima1@gmail.com)
+[![email](https://img.shields.io/badge/@shaimaHamila-lightgrey?style=for-the-badge)](mailto:2861984+shaima@hamila.uk)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shaimahamila/) 
 [![facebook](https://img.shields.io/badge/facebook-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://www.facebook.com/shaimaHamila) 
 [![dribbble](https://img.shields.io/badge/dribbble-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://dribbble.com/shaimaHamila) 
