@@ -59,17 +59,17 @@ export const Sections = {
     qualifications: [
       {
         title: "Software Engineering Degree",
-        subtitle: "ISIMS - Sfax University",
+        subtitle: "Higher Institute of Computer Science and Multimedia of Sfax",
         calendar: "2022 - 2025",
       },
       {
         title: "License in Computer Science and Multimedia",
-        subtitle: "ISIMS - Sfax University",
+        subtitle: "Higher Institute of Computer Science and Multimedia of Sfax",
         calendar: "2019 - 2022",
       },
       {
-        title: "Farhat Hached High School",
-        subtitle: "Bachelor of Mathematics",
+        title: "High School Diploma in Mathematics",
+        subtitle: "Farhat Hached High School",
         calendar: "2018 - 2019",
       },
     ],
@@ -139,20 +139,6 @@ export const Projects = [
     projectLink: "https://dar-coran.com/",
   },
   {
-    imgSrc: "projectsImg/kanbanboard.png",
-    title: "Kanban Board",
-    description:
-      "A task management system with drag-and-drop support for organizing tasks by status. Built with Laravel and Livewire.",
-    projectLink: "https://github.com/shaimaHamila/taskmanage-kanban",
-  },
-  {
-    imgSrc: "projectsImg/movieWebsite.png",
-    title: "Movie Website",
-    description: "A web app to browse, search, and manage movie information. Built with React, Redux, and a mock API.",
-    projectLink: "https://github.com/shaimaHamila/MovieWebsite",
-  },
-  //aaaaaaaaaaaaaaaa
-  {
     imgSrc: "projectsImg/trackingSys.png",
     title: "Tracking System Web App",
     description:
@@ -172,7 +158,19 @@ export const Projects = [
       "Freelance project for order tracking and managment, developed frontend with React and designed UX/UI.",
     projectLink: "https://vanlog-express.com/",
   },
-
+  {
+    imgSrc: "projectsImg/kanbanboard.png",
+    title: "Kanban Board",
+    description:
+      "A task management system with drag-and-drop support for organizing tasks by status. Built with Laravel and Livewire.",
+    projectLink: "https://github.com/shaimaHamila/taskmanage-kanban",
+  },
+  {
+    imgSrc: "projectsImg/movieWebsite.png",
+    title: "Movie Website",
+    description: "A web app to browse, search, and manage movie information. Built with React, Redux, and a mock API.",
+    projectLink: "https://github.com/shaimaHamila/MovieWebsite",
+  },
   {
     imgSrc: "projectsImg/wordpressWebsite.png",
     title: "Wordpress Website",
@@ -230,19 +228,14 @@ export const Projects = [
 ];
 export const ContactInformation = [
   {
-    icon: "uil uil-phone",
-    title: "Call Me",
-    subtitle: "+216 22 016 583",
-  },
-  {
     icon: "uil uil-envelope",
     title: "Email",
-    subtitle: "hamilachaima18@gmail.com",
+    subtitle: "shaima@hamila.uk",
   },
   {
     icon: "uil uil-map-marker",
     title: "Location",
-    subtitle: "Tunisia-Sousse",
+    subtitle: "Luxembourg",
   },
 ];
 
