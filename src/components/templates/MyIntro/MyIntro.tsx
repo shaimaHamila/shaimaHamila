@@ -61,7 +61,7 @@ const MyIntro: React.FC<MyIntroProps> = ({ socialLinks, imageSrc, title }) => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Full-Stack & Backend Software Engineer based in Luxembourg with 3+ years of experience building production fintech systems, multi-tenant SaaS platforms, and high-performance web applications.
+              I design and build full-stack web applications — from client projects to production systems.
             </motion.p>
             <motion.div
               className='home__status-badge'
@@ -83,7 +83,7 @@ const MyIntro: React.FC<MyIntroProps> = ({ socialLinks, imageSrc, title }) => {
               }}
             >
               <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#00e676', boxShadow: '0 0 8px #00e676' }}></span>
-              Open to full-time / internship roles in Luxembourg
+              Open to full-time roles and freelance projects in Luxembourg
             </motion.div>
 
             <motion.div
@@ -91,12 +91,16 @@ const MyIntro: React.FC<MyIntroProps> = ({ socialLinks, imageSrc, title }) => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
+              style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}
             >
-              <a href='#contact' className='button button--flex glow-on-hover'>
-                Let's Talk <i className='uil uil-message button__icon'></i>
+              <a href='#about' className='button button--flex glow-on-hover' style={{ backgroundColor: 'var(--first-color)' }}>
+                For Employers <i className='uil uil-file-alt button__icon'></i>
+              </a>
+              <a href='#services' className='button button--flex glow-on-hover' style={{ backgroundColor: 'transparent', border: '1px solid var(--first-color)', color: 'var(--first-color)' }}>
+                For Clients <i className='uil uil-briefcase-alt button__icon'></i>
               </a>
 
-              <div className='home__social'>
+              <div className='home__social' style={{ marginTop: '1rem', width: '100%' }}>
                 {socialLinks.map((link, index) => (
                   <a key={index} href={link.href} target='_blank' className='home__social-icon' rel='noreferrer'>
                     <i className={link.iconClass}></i>

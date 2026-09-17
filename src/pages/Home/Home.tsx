@@ -13,6 +13,7 @@ import Footer from "../../components/templates/Footer/Footer";
 import Menu from "../../components/templates/Menu/Menu";
 import MyIntro from "../../components/templates/MyIntro/MyIntro";
 import FlagshipCaseStudies from "../../components/templates/FlagshipCaseStudies/FlagshipCaseStudies";
+import HowIWork from "../../components/templates/HowIWork/HowIWork";
 import MyProjects from "../../components/templates/MyProjects/MyProjects";
 import Testimonials from "../../components/templates/Testimonials/Testimonials";
 import MyQualification from "../../components/templates/MyQualification/MyQualification";
@@ -40,12 +41,12 @@ const Home: React.FC = () => {
           subTitle={"My introduction"}
           imageSrc={"shaimaHamila-about-ing.png"}
           description={
-            "I’m a Full-Stack & Backend Software Engineer with 3+ years of experience based in Luxembourg. I specialize in designing robust architectures, secure APIs, and responsive frontends for scalable web applications."
+            "I’m a recent Software Engineering Master's graduate and a Full-Stack Developer based in Luxembourg. With proven freelance experience, I specialize in designing robust architectures, secure APIs, and responsive frontends for scalable web applications."
           }
           points={[
-            "🚀 I build production fintech and SaaS platforms.",
-            "⚡ Expert in NestJS, React, and PostgreSQL.",
-            "🔥 Passionate about clean code and system design.",
+            "🚀 Master's degree in Software Engineering.",
+            "⚡ Freelance experience building production SaaS platforms.",
+            "🔥 Expert in React, NestJS, and PostgreSQL.",
           ]}
           yearsExperience={"03+"}
           completedProjects={"15+"}
@@ -53,6 +54,7 @@ const Home: React.FC = () => {
           cvLink={"pdf/ShaimaHamilaCV2026.pdf"}
         />
         <MyServices title='Services' subTitle='What I offer' services={Services} />
+        <HowIWork />
         <MySkills title={"My Skills"} subTitle={"My technical skills"} skills={SkillsData} />
         <MyQualification sections={Sections} title={"Qualification"} subTitle={"My personal journey"} />
         <FlagshipCaseStudies />
