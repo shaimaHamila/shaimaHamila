@@ -9,6 +9,7 @@ type Project = {
 
   description: string;
   projectLink: string;
+  githubLink?: string;
 };
 
 type MyProjectsProps = {
@@ -64,15 +65,28 @@ const MyProjects: React.FC<MyProjectsProps> = ({ projects, title, subTitle }) =>
               <h3 className='work__title'>{project.title}</h3>
               <p className='work__description'>{project.description}</p>
 
-              <a
-                className='button button--flex button--small button--link services__button'
-                href={project.projectLink}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                View Project
-                <i className='uil uil-arrow-right button__icon' />
-              </a>
+              <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1rem' }}>
+                <a
+                  className='button button--flex button--small button--link services__button'
+                  href={project.projectLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  View Project
+                  <i className='uil uil-arrow-right button__icon' />
+                </a>
+                {project.githubLink && (
+                  <a
+                    className='button button--flex button--small button--link services__button'
+                    href={project.githubLink}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                    GitHub
+                    <i className='uil uil-github-alt button__icon' />
+                  </a>
+                )}
+              </div>
             </div>
           </motion.div>
         ))}

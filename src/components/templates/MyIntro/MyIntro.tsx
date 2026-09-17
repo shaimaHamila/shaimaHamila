@@ -19,7 +19,7 @@ const MyIntro: React.FC<MyIntroProps> = ({ socialLinks, imageSrc, title }) => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Javascript Developer", "Software Engineer", "UI/UX Enthusiast", "Problem Solver"],
+      strings: ["Full-Stack Software Engineer", "Backend Specialist (NestJS & Postgres)", "React & TypeScript Developer", "UX/UI Designer"],
       typeSpeed: 50,
       backSpeed: 50,
       backDelay: 2000,
@@ -61,9 +61,30 @@ const MyIntro: React.FC<MyIntroProps> = ({ socialLinks, imageSrc, title }) => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Transforming ideas into reality with code. I build accessible, responsive, and performant web
-              applications.
+              Full-Stack & Backend Software Engineer based in Luxembourg with 3+ years of experience building production fintech systems, multi-tenant SaaS platforms, and high-performance web applications.
             </motion.p>
+            <motion.div
+              className='home__status-badge'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                padding: '8px 16px',
+                background: 'rgba(0, 200, 83, 0.1)',
+                border: '1px solid rgba(0, 200, 83, 0.3)',
+                borderRadius: '20px',
+                color: '#00e676',
+                fontWeight: '500',
+                marginBottom: '1.5rem',
+                fontSize: '0.9rem'
+              }}
+            >
+              <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#00e676', boxShadow: '0 0 8px #00e676' }}></span>
+              Open to full-time / internship roles in Luxembourg
+            </motion.div>
 
             <motion.div
               className='home__actions'
