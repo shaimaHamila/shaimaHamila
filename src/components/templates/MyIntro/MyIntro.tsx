@@ -19,7 +19,12 @@ const MyIntro: React.FC<MyIntroProps> = ({ socialLinks, imageSrc, title }) => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Javascript Developer", "Software Engineer", "UI/UX Enthusiast", "Problem Solver"],
+      strings: [
+        "Full-Stack Software Engineer",
+        "Backend Specialist (NestJS & Postgres)",
+        "React & TypeScript Developer",
+        "UX/UI Designer",
+      ],
       typeSpeed: 50,
       backSpeed: 50,
       backDelay: 2000,
@@ -61,21 +66,58 @@ const MyIntro: React.FC<MyIntroProps> = ({ socialLinks, imageSrc, title }) => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              Transforming ideas into reality with code. I build accessible, responsive, and performant web
-              applications.
+              I design and build full-stack web applications — from client projects to production systems.
             </motion.p>
+            <motion.div
+              className='home__status-badge'
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "10px",
+                padding: "8px 16px",
+                background: "rgba(0, 200, 83, 0.1)",
+                border: "1px solid rgba(0, 200, 83, 0.3)",
+                borderRadius: "20px",
+                color: "#00e676",
+                fontWeight: "500",
+                marginBottom: "1.5rem",
+                fontSize: "0.9rem",
+              }}
+            >
+              <span
+                style={{
+                  width: "8px",
+                  height: "8px",
+                  paddingRight: "8px",
+                  borderRadius: "50%",
+                  backgroundColor: "#00e676",
+                  boxShadow: "0 0 8px #00e676",
+                }}
+              ></span>
+              Open to full-time roles in Luxembourg and remote freelance projects
+            </motion.div>
 
             <motion.div
               className='home__actions'
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
+              style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}
             >
-              <a href='#contact' className='button button--flex glow-on-hover'>
-                Let's Talk <i className='uil uil-message button__icon'></i>
+              <a href='#about' className='button button--flex glow-on-hover employer'>
+                For Employers <i className='uil uil-file-alt button__icon'></i>
+              </a>
+              <a
+                href='#services'
+                className='button button--flex glow-on-hover client'
+              >
+                For Clients <i className='uil uil-briefcase-alt button__icon'></i>
               </a>
 
-              <div className='home__social'>
+              <div className='home__social' style={{ marginTop: "1rem", width: "100%" }}>
                 {socialLinks.map((link, index) => (
                   <a key={index} href={link.href} target='_blank' className='home__social-icon' rel='noreferrer'>
                     <i className={link.iconClass}></i>

@@ -12,7 +12,10 @@ import ContactMe from "../../components/templates/ContactMe/ContactMe";
 import Footer from "../../components/templates/Footer/Footer";
 import Menu from "../../components/templates/Menu/Menu";
 import MyIntro from "../../components/templates/MyIntro/MyIntro";
+import FlagshipCaseStudies from "../../components/templates/FlagshipCaseStudies/FlagshipCaseStudies";
+import HowIWork from "../../components/templates/HowIWork/HowIWork";
 import MyProjects from "../../components/templates/MyProjects/MyProjects";
+import Testimonials from "../../components/templates/Testimonials/Testimonials";
 import MyQualification from "../../components/templates/MyQualification/MyQualification";
 import MyServices from "../../components/templates/MyServices/MyServices";
 import MySkills from "../../components/templates/MySkills/MySkills";
@@ -38,22 +41,25 @@ const Home: React.FC = () => {
           subTitle={"My introduction"}
           imageSrc={"shaimaHamila-about-ing.png"}
           description={
-            " I’m a Software Engineering & Full-stack JS developer with 2 years of experience. I specialize in creating high-quality web applications."
+            "I’m a recent Software Engineering Master's graduate and a Full-Stack Developer based in Luxembourg. With proven freelance experience, I specialize in designing robust architectures, secure APIs, and responsive frontends for scalable web applications."
           }
           points={[
-            "🚀 I deliver client-focused solutions.",
-            "⚡ I'm a web developer Freelancer.",
-            "🔥 I love sharing programming tips.",
+            "🚀 Master's degree in Software Engineering.",
+            "⚡ Freelance experience building production SaaS platforms.",
+            "🔥 Expert in React, NestJS, and PostgreSQL.",
           ]}
-          yearsExperience={"02+"}
+          yearsExperience={"03+"}
           completedProjects={"15+"}
           companiesWorked={"05+"}
           cvLink={"pdf/ShaimaHamilaCV2026.pdf"}
         />
         <MyServices title='Services' subTitle='What I offer' services={Services} />
+        <HowIWork />
         <MySkills title={"My Skills"} subTitle={"My technical skills"} skills={SkillsData} />
         <MyQualification sections={Sections} title={"Qualification"} subTitle={"My personal journey"} />
-        <MyProjects projects={Projects} title={"My work "} subTitle={"Most recent work"} />
+        <FlagshipCaseStudies />
+        <MyProjects projects={Projects} title={"Other Projects"} subTitle={"More of my work"} />
+        <Testimonials />
         <ContactMe
           contactInformation={ContactInformation}
           subTitle={"Get in touch"}
