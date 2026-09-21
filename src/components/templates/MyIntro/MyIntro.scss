@@ -5,7 +5,8 @@
   min-height: 90vh;
   display: flex;
   align-items: center;
-  padding-top: 4rem; /* Added global padding for the section */
+  padding-top: 4rem;
+  /* Added global padding for the section */
 }
 
 /*============ home ==========*/
@@ -22,18 +23,21 @@
   gap: 2rem;
   align-items: center;
   text-align: center;
-  padding-top: 1rem; /* Additional spacing */
+  padding-top: 1rem;
+  /* Additional spacing */
 }
 
 /* Desktop Grid */
 @media screen and (min-width: 768px) {
   .home__content {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Equal width for better balance */
+    grid-template-columns: 1fr 1fr;
+    /* Equal width for better balance */
     text-align: left;
     align-items: center;
     gap: 4rem;
-    padding-top: 2rem; /* More space on desktop */
+    padding-top: 2rem;
+    /* More space on desktop */
   }
 }
 
@@ -41,12 +45,14 @@
 .home__data {
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* Tighter gap */
+  gap: 1rem;
+  /* Tighter gap */
 }
 
 /* Typography */
 .home__title {
-  font-size: 2.5rem; /* Explicit size instead of variable for control */
+  font-size: 2.5rem;
+  /* Explicit size instead of variable for control */
   font-weight: var(--font-bold);
   line-height: 1.1;
   margin-bottom: 0.5rem;
@@ -54,7 +60,8 @@
 
 @media screen and (min-width: 768px) {
   .home__title {
-    font-size: 3.5rem; /* Larger on desktop */
+    font-size: 3.5rem;
+    /* Larger on desktop */
   }
 }
 
@@ -68,7 +75,8 @@
   font-size: 1.25rem;
   color: var(--text-color);
   font-weight: var(--font-medium);
-  min-height: 1.5em; /* Prevent layout shift while typing */
+  min-height: 1.5em;
+  /* Prevent layout shift while typing */
 }
 
 @media screen and (min-width: 768px) {
@@ -114,7 +122,8 @@
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: center; /* Mobile Center */
+  justify-content: center;
+  /* Mobile Center */
 }
 
 @media screen and (min-width: 768px) {
@@ -139,7 +148,8 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--input-color); /* Theme aware: Light tint in Light Mode, Glass in Dark Mode */
+  background-color: var(--input-color);
+  /* Theme aware: Light tint in Light Mode, Glass in Dark Mode */
 }
 
 .home__social-icon:hover {
@@ -157,7 +167,8 @@
 
 .blob-shape {
   position: relative;
-  width: 320px; /* Increased from 280px */
+  width: 320px;
+  /* Increased from 280px */
   height: 320px;
   display: flex;
   justify-content: center;
@@ -166,12 +177,15 @@
 
 /* React Atom Nucleus (Profile Image) */
 .home__blob {
-  width: 160px; /* Increased from 140px */
+  width: 160px;
+  /* Increased from 140px */
   height: 160px;
   object-fit: cover;
-  border-radius: 50%; /* Perfect Circle */
+  border-radius: 50%;
+  /* Perfect Circle */
   border: 3px solid var(--first-color);
-  box-shadow: 0 0 20px rgba(var(--hue-color), 98%, 50%, 0.5); /* Glowing Nucleus */
+  box-shadow: 0 0 20px rgba(var(--hue-color), 98%, 50%, 0.5);
+  /* Glowing Nucleus */
   z-index: 10;
   position: relative;
 }
@@ -184,7 +198,8 @@
   width: 100%;
   height: 100%;
   animation: spin-atom 10s linear infinite;
-  pointer-events: none; /* Let clicks pass to image/area */
+  pointer-events: none;
+  /* Let clicks pass to image/area */
 }
 
 /* Individual Orbits */
@@ -193,7 +208,8 @@
   top: 50%;
   left: 50%;
   width: 100%;
-  height: 35%; /* Eliptical shape */
+  height: 35%;
+  /* Eliptical shape */
   border: 2px solid var(--first-color);
   border-radius: 50%;
   transform-origin: center;
@@ -204,9 +220,11 @@
 .orbit-1 {
   transform: translate(-50%, -50%) rotate(0deg);
 }
+
 .orbit-2 {
   transform: translate(-50%, -50%) rotate(60deg);
 }
+
 .orbit-3 {
   transform: translate(-50%, -50%) rotate(120deg);
 }
@@ -215,6 +233,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -222,11 +241,14 @@
 
 @media screen and (min-width: 1024px) {
   .blob-shape {
-    width: 450px; /* Significantly larger on desktop (was 360px) */
+    width: 450px;
+    /* Significantly larger on desktop (was 360px) */
     height: 450px;
   }
+
   .home__blob {
-    width: 220px; /* Larger Nucleus (was 180px) */
+    width: 220px;
+    /* Larger Nucleus (was 180px) */
     height: 220px;
   }
 }
@@ -235,7 +257,8 @@
 .home__scroll {
   display: flex;
   justify-content: center;
-  margin-top: auto; /* Push to bottom if container has height */
+  margin-top: auto;
+  /* Push to bottom if container has height */
   padding-top: 2rem;
 }
 
@@ -255,20 +278,24 @@
 .home__scroll-mouse {
   font-size: 2rem;
 }
+
 .home__scroll-arrow {
   font-size: 1.25rem;
 }
 
-/* Animations */
+/* Animation buttons */
 
 /* Glow Button (Keep existing) */
+
 .button.glow-on-hover {
-  width: 150px;
-  height: 45px;
+  width: 180px;
+  height: 50px;
   border: none;
   outline: none;
-  background: var(--first-color); /* Primary Background */
-  color: #fff; /* Always White Text */
+  background: var(--first-color);
+  /* Primary Background */
+  color: #fff;
+  /* Always White Text */
   cursor: pointer;
   position: relative;
   z-index: 0;
@@ -278,6 +305,22 @@
   align-items: center;
   font-weight: 500;
   gap: 0.5rem;
+}
+
+/* ========================================
+   EMPLOYERS — Glowing Button
+======================================== */
+
+.button.glow-on-hover.client {
+  border: solid 2px var(--first-color);
+  background: transparent;
+  color: var(--first-color);
+  z-index: 0;
+}
+
+.button.glow-on-hover.client:hover {
+  background: var(--first-color);
+  color: white;
 }
 
 .button.glow-on-hover:before {
@@ -300,9 +343,11 @@
 .button.glow-on-hover:active {
   color: var(--title-color);
 }
+
 .button.glow-on-hover:active:after {
   background: transparent;
 }
+
 .button.glow-on-hover:hover:before {
   opacity: 1;
 }
@@ -313,20 +358,39 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: var(--first-color); /* Primary Background */
+  background: var(--first-color);
+  /* Primary Background */
   left: 0;
   top: 0;
   border-radius: 10px;
-  border: 1px solid var(--first-color); /* Add border to match theme */
+  border: 1px solid var(--first-color);
+  /* Add border to match theme */
+}
+
+.button.glow-on-hover.client:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  /* Primary Background */
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  border: 1px solid var(--first-color);
+  /* Add border to match theme */
 }
 
 @keyframes glowing {
   0% {
     background-position: 0 0;
   }
+
   50% {
     background-position: 400% 0;
   }
+
   100% {
     background-position: 0 0;
   }

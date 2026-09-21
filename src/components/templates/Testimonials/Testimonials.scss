@@ -3,14 +3,14 @@
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
-  
+
   &__card {
     background-color: var(--container-color);
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
-    
+
     &:hover {
       transform: translateY(-5px);
     }

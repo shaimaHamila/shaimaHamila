@@ -62,12 +62,12 @@ export const Sections = {
     title: "Education",
     qualifications: [
       {
-        title: "Software Engineering Degree",
+        title: "Master's Degree in Software Engineering",
         subtitle: "Higher Institute of Computer Science and Multimedia of Sfax",
         calendar: "2022 - 2025",
       },
       {
-        title: "License in Computer Science and Multimedia",
+        title: "Bachelor’s Degree in Computer Science and Multimedia",
         subtitle: "Higher Institute of Computer Science and Multimedia of Sfax",
         calendar: "2019 - 2022",
       },
@@ -87,20 +87,46 @@ export const Sections = {
         calendar: "Jan 2024 - Present | 1.5+ Years",
       },
       {
+        title: "Full stack Laravel developer",
+        subtitle: "Malcolm Technology Yazılım A.Ş., Turkey, Onsite",
+        calendar: "Apr 2025 - Aug 2025 | 5 Months",
+      },
+      {
         title: "Full-Stack JS Developer",
         subtitle: "Astrolab Agency, Tunisia, Hybrid",
-        calendar: "Aug 2024 - Nov 2024 | 4 Months",
+        calendar: "Aug 2024 - Dec 2024 | 5 Months",
       },
       {
         title: "Full-Stack Developer (MERN)",
         subtitle: "Converty, Tunisia, Remote",
-        calendar: "May 2023 - Jul 2023 | 3 Months",
+        calendar: "May 2023 - Aug 2023 | 4 Months",
       },
       {
         title: "Full-Stack Developer & UX/UI Designer",
         subtitle: "Tekab, Tunisia, Onsite",
-        calendar: "June 2022 - May 2023 | 11 Months",
+        calendar: "May 2022 - May 2023 | 1 Year",
       },
+      {
+        title: "Full stack developer & UX/UI Designer",
+        subtitle: "DevIT, Tunisia, Onsite",
+        calendar: "Jan 2022 - May 2022 | 5 Months | Internship",
+      },
+      {
+        title: "Web designer",
+        subtitle: "Flash dating, United State, Remote",
+        calendar: "Jun 2021 - Aug 2021 | 3 Months |  Freelance",
+      },
+      {
+        title: "UX Agile manager",
+        subtitle: "UX World Academy, Tunisia, Remote",
+        calendar: "Jun 2021 - Aug 2021 | 3 Months |  Internship",
+      },
+      {
+        title: "Full stack developer",
+        subtitle: "Team-Dev, Tunisia, hybrid",
+        calendar: "Aug 2020 - Oct 2020 | 3 Months | Internship",
+      },
+
     ],
   },
 };
@@ -116,8 +142,7 @@ export const Projects = [
   {
     imgSrc: "projectsImg/vanlog.png",
     title: "Vanlog Tracking Platform",
-    description:
-      "Logistics tracking system featuring Atomic Design, i18n, Redux Toolkit, and real-time chat updates.",
+    description: "Logistics tracking system featuring Atomic Design, i18n, Redux Toolkit, and real-time chat updates.",
     projectLink: "https://vanlog-express.com/",
     githubLink: "",
   },
@@ -158,11 +183,38 @@ export const Projects = [
     githubLink: "https://github.com/shaimaHamila/RunGroup",
   },
   {
-    imgSrc: "projectsImg/MyFinance.png",
-    title: "MyFinance",
-    description: "Web application developed with .NET Core Entity Framework, ASP.NET Core MVC.",
-    projectLink: "https://github.com/shaimaHamila/MyFinance",
-    githubLink: "https://github.com/shaimaHamila/MyFinance",
+    imgSrc: "projectsImg/kanbanboard.png",
+    title: "Kanban Board",
+    description:
+      "A task management system with drag-and-drop support for organizing tasks by status. Built with Laravel and Livewire.",
+    projectLink: "https://github.com/shaimaHamila/taskmanage-kanban",
+    githubLink: "https://github.com/shaimaHamila/taskmanage-kanban",
+  },
+  {
+    imgSrc: "projectsImg/movieWebsite.png",
+    title: "Movie Website",
+    description: "A web app to browse, search, and manage movie information. Built with React, Redux, and a mock API.",
+    projectLink: "https://github.com/shaimaHamila/MovieWebsite",
+    githubLink: "https://github.com/shaimaHamila/MovieWebsite",
+  },
+  {
+    imgSrc: "projectsImg/wordpressWebsite.png",
+    title: "Wordpress Website",
+    description: "I designed and developed this website using WordPress.",
+    projectLink: "",
+  },
+  {
+    imgSrc: "projectsImg/UXUIDesign.png",
+    title: "UX/UI Design",
+    description: "I designed this Landing page.",
+    projectLink: "https://dribbble.com/shots/22791979-Game-Streaming-UX-UI-design?utm_source=Clipboard_Shot&utm_campaign=shaimaHamila&utm_content=Game%20Streaming%20-%20UX%2FUI%20design&utm_medium=Social_Share&utm_source=Clipboard_Shot&utm_campaign=shaimaHamila&utm_content=Game%20Streaming%20-%20UX%2FUI%20design&utm_medium=Social_Share",
+  },
+  {
+    imgSrc: "projectsImg/fansbookAPP.png",
+    title: "Mobile App",
+    description: "Developed Fansbook, a mobile app using Ionic/Angular and Firebase.",
+    projectLink: "https://github.com/shaimaHamila/fansbook",
+    githubLink: "https://github.com/shaimaHamila/fansbook",
   },
 ];
 export const ContactInformation = [

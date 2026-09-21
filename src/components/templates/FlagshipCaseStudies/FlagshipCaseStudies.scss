@@ -2,14 +2,14 @@
   &__container {
     gap: 2rem;
   }
-  
+
   &__card {
     background-color: var(--container-color);
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
-    
+
     &:hover {
       transform: translateY(-5px);
     }
@@ -52,14 +52,15 @@
       font-size: var(--h3-font-size);
       color: var(--title-color);
       margin-bottom: 0.5rem;
-      
+
       i {
         color: var(--text-color);
         font-size: 1.25rem;
       }
     }
-    
-    p, li {
+
+    p,
+    li {
       color: var(--text-color);
       font-size: var(--normal-font-size);
       line-height: 1.6;
@@ -88,4 +89,19 @@
   .flagship__card {
     padding: 1rem;
   }
+}
+
+.flagship__diagram {
+  margin-top: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.flagship__architecture {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  border: 1px solid var(--container-color);
 }

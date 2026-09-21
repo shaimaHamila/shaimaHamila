@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 const processSteps = [
   {
     title: "1. Discovery & Planning",
-    description: "We align on your business goals, target audience, and project scope before writing a single line of code.",
+    description:
+      "We align on your business goals, target audience, and project scope before writing a single line of code.",
     icon: "uil uil-search-alt",
   },
   {
@@ -34,12 +35,12 @@ const processSteps = [
 const HowIWork: React.FC = () => {
   return (
     <section className='howiwork section' id='process'>
-      <SectionTitle title="How I Work" subTitle="My client project delivery process" />
+      <SectionTitle title='How I Work' subTitle='My client project delivery process' />
       <div className='howiwork__container container'>
         <div className='howiwork__timeline'>
           {processSteps.map((step, index) => (
-            <motion.div 
-              className='howiwork__step' 
+            <motion.div
+              className='howiwork__step'
               key={index}
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
